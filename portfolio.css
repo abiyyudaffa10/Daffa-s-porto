@@ -692,4 +692,22 @@ body {
   .project-meta { grid-template-columns: 1fr 1fr; }
   .nav .progress { display: none; }
   .timeofday { bottom: 16px; right: 16px; }
+
+  /* iOS & mobile: background-attachment: fixed is broken on Safari
+     and causes jank on Android. Replace with a plain solid fallback
+     that matches the pre-dawn scene start color. The scroll engine
+     still updates --sky-top / --sea via JS so the stage layer looks
+     correct; only the body background loses parallax. */
+  body {
+    background: var(--sky-top, #0E1A38);
+    background-attachment: scroll;
+  }
+
+  /* Reduce blur on mobile — backdrop-filter is GPU-heavy on mid-range
+     phones. Half the radius keeps the frosted-glass look without
+     dropping frames. */
+  .mock-card {
+    backdrop-filter: blur(8px) saturate(1.05);
+    -webkit-backdrop-filter: blur(8px) saturate(1.05);
+  }
 }
