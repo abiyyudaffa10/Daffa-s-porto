@@ -1,0 +1,52 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css"><link rel="stylesheet" href="_base.css">
+<style>
+  body { padding: 0; height: 280px; background: linear-gradient(to bottom, #88B8DC 0%, #F8D4B8 55%, #FFD27A 65%, #5A8AB0 75%, #345A82 100%); position: relative; overflow: hidden; display: flex; align-items: center; }
+  .container { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 28px; display: grid; grid-template-columns: 1.1fr 1fr; gap: 32px; align-items: center; position: relative; z-index: 2; }
+  .sun { position: absolute; left: 50%; top: 40%; transform: translate(-50%, -50%); width: 120px; height: 120px; border-radius: 50%; background: radial-gradient(circle, #FFFCEA, #FFDD8A 40%, transparent 78%); box-shadow: 0 0 60px 12px #FFEFC866, 0 0 140px 30px #FFD27A33; }
+  .horizon { position: absolute; left: 0; right: 0; top: 65%; height: 1px; background: linear-gradient(to right, transparent, #FFD27A, #FFEFC8, #FFD27A, transparent); filter: blur(0.5px); }
+  .eye { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #466B8E; margin-bottom: 14px; }
+  .eye .pip { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #FF6B5A; margin-right: 8px; vertical-align: middle; }
+  h2 { font-family: var(--font-serif); font-weight: 400; font-size: 44px; line-height: 1.02; color: #0E2540; letter-spacing: -0.02em; margin: 0 0 10px; }
+  h2 em { font-style: italic; }
+  h2 .dot { color: #FF6B5A; font-style: italic; }
+  .lede { font-family: var(--font-serif); font-style: italic; font-size: 15px; line-height: 1.4; color: #466B8E; margin: 10px 0 0; max-width: 36ch; }
+  .mock { background: rgba(240,247,251,0.85); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(14,37,64,0.14); border-radius: 10px; overflow: hidden; box-shadow: 0 20px 40px -16px rgba(14,37,64,0.3); }
+  .bar { display: flex; align-items: center; gap: 8px; padding: 8px 12px; background: rgba(14,37,64,0.05); border-bottom: 1px solid rgba(14,37,64,0.1); }
+  .bar .dots { display: flex; gap: 4px; }
+  .bar .dots span { width: 7px; height: 7px; border-radius: 50%; background: #B8CCD9; }
+  .bar .url { font-family: var(--font-mono); font-size: 10px; color: #466B8E; background: #F0F7FB; padding: 2px 8px; border-radius: 2px; border: 1px solid rgba(14,37,64,0.15); }
+  .bar .badge { margin-left: auto; font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; padding: 2px 6px; border-radius: 999px; background: rgba(255,107,90,0.12); color: #D14938; border: 1px solid rgba(255,107,90,0.3); }
+  .body { padding: 12px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; margin-bottom: 10px; }
+  .stat { background: #DCEEF7; padding: 7px; border-radius: 3px; border: 1px solid rgba(14,37,64,0.1); }
+  .stat .e { font-family: var(--font-mono); font-size: 8px; letter-spacing: 0.14em; text-transform: uppercase; color: #466B8E; }
+  .stat .v { font-size: 16px; font-weight: 500; color: #0E2540; font-variant-numeric: tabular-nums; }
+  table { width: 100%; border-collapse: collapse; font-size: 10px; }
+  th, td { text-align: left; padding: 4px 2px; border-bottom: 1px solid rgba(14,37,64,0.08); color: #1E3A5F; }
+  th { font-family: var(--font-mono); font-size: 8px; letter-spacing: 0.14em; text-transform: uppercase; color: #7A98B5; font-weight: 500; }
+</style></head><body>
+  <div class="sun"></div>
+  <div class="horizon"></div>
+  <div class="container">
+    <div>
+      <div class="eye"><span class="pip"></span> 07:08 — Morning · 04 / 06</div>
+      <h2>Terminal <em>Operating</em> System<span class="dot">.</span></h2>
+      <div class="lede">A project scene — frosted mock card, scene-tinted type, and the sun in the right slot.</div>
+    </div>
+    <div class="mock">
+      <div class="bar"><div class="dots"><span></span><span></span><span></span></div><span class="url">port-ops.io/yard</span><span class="badge">live</span></div>
+      <div class="body">
+        <div class="grid">
+          <div class="stat"><div class="e">Moves/hr</div><div class="v">+24%</div></div>
+          <div class="stat"><div class="e">Dwell</div><div class="v">−41%</div></div>
+          <div class="stat"><div class="e">Shift</div><div class="v">428</div></div>
+        </div>
+        <table><thead><tr><th>SKU</th><th>Berth</th><th style="text-align:right">Moves</th></tr></thead><tbody>
+          <tr><td>CT-4421</td><td>B7-A1</td><td style="text-align:right;font-family:var(--font-mono)">+12</td></tr>
+          <tr><td>CT-4422</td><td>B7-A2</td><td style="text-align:right;font-family:var(--font-mono)">+18</td></tr>
+        </tbody></table>
+      </div>
+    </div>
+  </div>
+</body></html>

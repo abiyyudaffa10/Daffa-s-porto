@@ -1,0 +1,20 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css"><link rel="stylesheet" href="_base.css">
+<style>
+  body { padding: 22px 24px; }
+  .row { gap: 12px; }
+  .sw { flex: 1; border-radius: 4px; padding: 14px 14px 12px; min-height: 96px; display: flex; flex-direction: column; justify-content: space-between; }
+  .name { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
+  .hex { font-family: var(--font-mono); font-size: 11.5px; }
+  .dark .name, .dark .hex { color: rgba(244,239,230,0.75); }
+  .light .name, .light .hex { color: var(--ink-3); }
+</style></head><body>
+  <div class="row" style="margin-bottom:8px;"><span class="lbl">Ink</span><span class="val" style="margin-left:auto;">Deep navy scale — primary type and hairlines</span></div>
+  <div class="row">
+    <div class="sw dark" style="background:var(--ink)"><span class="name">ink</span><span class="hex">#0E2540</span></div>
+    <div class="sw dark" style="background:var(--ink-2)"><span class="name">ink-2</span><span class="hex">#1E3A5F</span></div>
+    <div class="sw dark" style="background:var(--ink-3)"><span class="name">ink-3</span><span class="hex">#466B8E</span></div>
+    <div class="sw light" style="background:var(--ink-4)"><span class="name">ink-4</span><span class="hex">#7A98B5</span></div>
+    <div class="sw light" style="background:var(--ink-5);border:1px solid var(--rule-strong);"><span class="name">ink-5</span><span class="hex">#B8CCD9</span></div>
+  </div>
+</body></html>

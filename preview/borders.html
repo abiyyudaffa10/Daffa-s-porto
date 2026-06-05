@@ -1,0 +1,22 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css"><link rel="stylesheet" href="_base.css">
+<style>
+  body { padding: 22px 24px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 14px; align-items: stretch; }
+  .tile { display: flex; flex-direction: column; gap: 8px; }
+  .demo { height: 64px; background: var(--card); display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-size: 11px; color: var(--ink-3); }
+  .r1 { border-top: 1px solid var(--rule); }
+  .r2 { border-top: 1px solid var(--rule-strong); }
+  .r3 { border: 1px solid var(--rule-strong); }
+  .r4 { border: 1px solid var(--ink); }
+  .n { font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-3); letter-spacing: 0.1em; text-transform: uppercase; }
+  .v { font-family: var(--font-mono); font-size: 10px; color: var(--ink-4); }
+</style></head><body>
+  <div class="row" style="margin-bottom:14px;"><span class="lbl">Borders &amp; rules</span><span class="val" style="margin-left:auto;">Hairlines first — they do most of the layout work</span></div>
+  <div class="grid">
+    <div class="tile"><div class="demo r1">DENSE DIVIDER</div><span class="n">--rule</span><span class="v">ink · 6%</span></div>
+    <div class="tile"><div class="demo r2">SECTION BREAK</div><span class="n">--rule-strong</span><span class="v">ink · 15%</span></div>
+    <div class="tile"><div class="demo r3">CARD EDGE</div><span class="n">card border</span><span class="v">1px solid rule-strong</span></div>
+    <div class="tile"><div class="demo r4">PRIMARY AFFORDANCE</div><span class="n">solid ink</span><span class="v">1px solid ink</span></div>
+  </div>
+</body></html>

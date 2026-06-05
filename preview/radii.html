@@ -1,0 +1,21 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css"><link rel="stylesheet" href="_base.css">
+<style>
+  body { padding: 22px 24px; }
+  .row { gap: 16px; align-items: center; }
+  .tile { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .box { width: 72px; height: 72px; background: var(--card); border: 1px solid var(--rule-strong); }
+  .pill { width: 130px; height: 36px; background: var(--ink); border-radius: 999px; color: var(--paper); font-family: var(--font-mono); font-size: 11px; display: flex; align-items: center; justify-content: center; letter-spacing: 0.08em; }
+  .n { font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-3); letter-spacing: 0.08em; text-transform: uppercase; }
+  .v { font-family: var(--font-mono); font-size: 10px; color: var(--ink-4); }
+</style></head><body>
+  <div class="row" style="margin-bottom:14px;"><span class="lbl">Radii</span><span class="val" style="margin-left:auto;">Mostly flat. Pill for status only.</span></div>
+  <div class="row">
+    <div class="tile"><div class="box" style="border-radius:0"></div><span class="n">r-0</span><span class="v">0px</span></div>
+    <div class="tile"><div class="box" style="border-radius:2px"></div><span class="n">r-1</span><span class="v">2px</span></div>
+    <div class="tile"><div class="box" style="border-radius:4px"></div><span class="n">r-2</span><span class="v">4px</span></div>
+    <div class="tile"><div class="box" style="border-radius:8px"></div><span class="n">r-3</span><span class="v">8px</span></div>
+    <div class="tile"><div class="box" style="border-radius:12px"></div><span class="n">r-4</span><span class="v">12px</span></div>
+    <div class="tile"><div class="pill">SHIPPED · v0.3</div><span class="n">r-pill</span><span class="v">999px</span></div>
+  </div>
+</body></html>

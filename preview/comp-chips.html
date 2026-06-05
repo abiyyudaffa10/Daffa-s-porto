@@ -1,0 +1,33 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css"><link rel="stylesheet" href="_base.css">
+<style>
+  body { padding: 22px 24px; }
+  .row { gap: 10px; align-items: center; flex-wrap: wrap; }
+  .chip { display: inline-flex; align-items: center; gap: 6px; padding: 4px 9px; border-radius: 2px; background: var(--card); border: 1px solid var(--rule-strong); font-family: var(--font-sans); font-size: 12.5px; color: var(--ink-2); }
+  .chip.solid { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .pip { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+  .tag-mono { font-family: var(--font-mono); font-size: 11px; padding: 3px 7px; border-radius: 2px; letter-spacing: 0.06em; text-transform: uppercase; }
+  .t-ok { background: var(--ok-wash); color: var(--ok); }
+  .t-warn { background: var(--warn-wash); color: #8a6b1f; }
+  .t-risk { background: var(--risk-wash); color: var(--risk); }
+  .t-info { background: var(--info-wash); color: var(--info); }
+  .pill { padding: 4px 10px; border-radius: 999px; background: var(--signal-wash); color: var(--signal-ink); font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; border: 1px solid #E85D2F40; }
+</style></head><body>
+  <div class="row" style="margin-bottom:12px;"><span class="lbl">Chips, tags, status</span><span class="val" style="margin-left:auto;">Mono for state, sans for filters</span></div>
+  <div class="row" style="margin-bottom:10px;">
+    <span class="chip">ERP</span>
+    <span class="chip">Logistics</span>
+    <span class="chip">AI · Eval</span>
+    <span class="chip solid">+ 4 more</span>
+  </div>
+  <div class="row" style="margin-bottom:10px;">
+    <span class="tag-mono t-ok"><span class="pip" style="background:var(--ok)"></span> shipped</span>
+    <span class="tag-mono t-warn"><span class="pip" style="background:var(--warn)"></span> at risk</span>
+    <span class="tag-mono t-risk"><span class="pip" style="background:var(--risk)"></span> blocked</span>
+    <span class="tag-mono t-info"><span class="pip" style="background:var(--info)"></span> in review</span>
+  </div>
+  <div class="row">
+    <span class="pill">v0.3.1 · jun 2026</span>
+    <span class="pill" style="background:transparent;color:var(--signal);border-color:#E85D2F66;">live</span>
+  </div>
+</body></html>

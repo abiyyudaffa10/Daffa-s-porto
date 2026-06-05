@@ -1,0 +1,32 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css"><link rel="stylesheet" href="_base.css">
+<style>
+  body { padding: 22px 32px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: flex-end; }
+  .cell { display: flex; flex-direction: column; gap: 4px; padding-bottom: 12px; border-bottom: 1px solid var(--rule-strong); }
+  .big { font-family: var(--font-sans); font-weight: 500; font-size: 44px; line-height: 1; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+  .delta { font-family: var(--font-mono); font-size: 12px; color: var(--signal); }
+  .delta.ok { color: var(--ok); }
+  .lab { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.12em; color: var(--ink-4); text-transform: uppercase; }
+  svg { width: 100%; height: 28px; margin-top: 4px; }
+</style></head><body>
+  <div class="grid">
+    <div class="cell">
+      <span class="lab">On-time delivery</span>
+      <span class="big">+38<span style="font-family:var(--font-mono);font-size:18px;color:var(--ink-3)">%</span></span>
+      <svg viewBox="0 0 200 28" preserveAspectRatio="none"><path d="M0 22 L25 19 L50 21 L75 14 L100 16 L125 9 L150 11 L175 5 L200 3" fill="none" stroke="#15140F" stroke-width="1.5" stroke-linecap="round"/><circle cx="200" cy="3" r="3" fill="#E85D2F"/></svg>
+      <span class="delta ok">↗ Q1 → Q3 2024</span>
+    </div>
+    <div class="cell">
+      <span class="lab">Inventory accuracy</span>
+      <span class="big">98.6<span style="font-family:var(--font-mono);font-size:18px;color:var(--ink-3)">%</span></span>
+      <svg viewBox="0 0 200 28" preserveAspectRatio="none"><path d="M0 24 L25 20 L50 16 L75 14 L100 10 L125 8 L150 6 L175 4 L200 3" fill="none" stroke="#15140F" stroke-width="1.5"/><circle cx="200" cy="3" r="3" fill="#E85D2F"/></svg>
+      <span class="delta ok">↗ from 71%</span>
+    </div>
+    <div class="cell">
+      <span class="lab">Projects shipped</span>
+      <span class="big">07</span>
+      <span class="lab" style="color:var(--ink-3);text-transform:none;letter-spacing:0;">2024–2025 · 2 in flight</span>
+    </div>
+  </div>
+</body></html>

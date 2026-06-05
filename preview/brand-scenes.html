@@ -1,0 +1,68 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css"><link rel="stylesheet" href="_base.css">
+<style>
+  body { padding: 0; background: #0E1A38; }
+  .row { display: grid; grid-template-columns: repeat(6, 1fr); height: 320px; }
+  .s { position: relative; overflow: hidden; }
+  .s::after {
+    content: attr(data-label);
+    position: absolute;
+    left: 12px; bottom: 12px;
+    font-family: var(--font-mono); font-size: 10px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: rgba(255,255,255,0.9);
+    background: rgba(0,0,0,0.25);
+    padding: 4px 7px; border-radius: 2px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  .sky { position: absolute; inset: 0 0 35%; }
+  .sea { position: absolute; left: 0; right: 0; top: 65%; bottom: 0; }
+  .sun { position: absolute; left: 50%; transform: translate(-50%, -50%); border-radius: 50%; }
+  .horizon { position: absolute; left: 0; right: 0; top: 65%; height: 1px; filter: blur(0.5px); }
+
+  /* Scene 1 — Pre-dawn */
+  .s1 .sky    { background: linear-gradient(to bottom, #0E1A38 0%, #2C3A60 55%, #5B4060 100%); }
+  .s1 .sea    { background: linear-gradient(to bottom, #5B4060 0%, #1F2F4E 30%, #06101E 100%); }
+  .s1 .sun    { top: 115%; width: 130px; height: 130px; background: radial-gradient(circle, #FFF6DC, #FFCF6B 40%, transparent 78%); opacity: 0.2; }
+  .s1 .horizon{ background: linear-gradient(to right, transparent, #5B4060, transparent); }
+
+  /* Scene 2 — First light */
+  .s2 .sky    { background: linear-gradient(to bottom, #2E4068 0%, #7C5A80 55%, #FF8A6B 100%); }
+  .s2 .sea    { background: linear-gradient(to bottom, #FF8A6B 0%, #2F4060 30%, #11203A 100%); }
+  .s2 .sun    { top: 78%; width: 150px; height: 150px; background: radial-gradient(circle, #FFF6DC, #FFB87C 40%, transparent 78%); opacity: 0.9; box-shadow: 0 0 60px 8px #FFB87C66, 0 0 140px 30px #FF8A6B33; }
+  .s2 .horizon{ background: linear-gradient(to right, transparent, #FF8A6B, #FFD8A8, #FF8A6B, transparent); }
+
+  /* Scene 3 — Sunrise */
+  .s3 .sky    { background: linear-gradient(to bottom, #5078A8 0%, #D89488 55%, #FFB87C 100%); }
+  .s3 .sea    { background: linear-gradient(to bottom, #FFB87C 0%, #4A6E92 30%, #243A5A 100%); }
+  .s3 .sun    { top: 58%; width: 160px; height: 160px; background: radial-gradient(circle, #FFF6DC, #FFCF6B 40%, transparent 78%); opacity: 1; box-shadow: 0 0 70px 10px #FFCF6B66, 0 0 140px 30px #FF8A6B33; }
+  .s3 .horizon{ background: linear-gradient(to right, transparent, #FFB87C, #FFE3A8, #FFB87C, transparent); }
+
+  /* Scene 4 — Morning */
+  .s4 .sky    { background: linear-gradient(to bottom, #88B8DC 0%, #F8D4B8 55%, #FFD27A 100%); }
+  .s4 .sea    { background: linear-gradient(to bottom, #FFD27A 0%, #5A8AB0 30%, #345A82 100%); }
+  .s4 .sun    { top: 40%; width: 130px; height: 130px; background: radial-gradient(circle, #FFFCEA, #FFDD8A 40%, transparent 78%); opacity: 1; box-shadow: 0 0 60px 12px #FFEFC866, 0 0 140px 30px #FFD27A33; }
+  .s4 .horizon{ background: linear-gradient(to right, transparent, #FFD27A, #FFEFC8, #FFD27A, transparent); }
+
+  /* Scene 5 — Bright morning */
+  .s5 .sky    { background: linear-gradient(to bottom, #9ED4EE 0%, #D4EBF5 55%, #FFEAB8 100%); }
+  .s5 .sea    { background: linear-gradient(to bottom, #FFEAB8 0%, #4A7BA0 30%, #2F5A82 100%); }
+  .s5 .sun    { top: 24%; width: 110px; height: 110px; background: radial-gradient(circle, #FFFEEF, #FFE3A0 40%, transparent 78%); opacity: 1; box-shadow: 0 0 50px 10px #FFF4D866; }
+  .s5 .horizon{ background: linear-gradient(to right, transparent, #FFEAB8, #FFF4D8, transparent); }
+
+  /* Scene 6 — Daylight */
+  .s6 .sky    { background: linear-gradient(to bottom, #B6DEEF 0%, #DCEEF7 55%, #F8E8C8 100%); }
+  .s6 .sea    { background: linear-gradient(to bottom, #F8E8C8 0%, #5A8AB0 30%, #3E6E92 100%); }
+  .s6 .sun    { top: 16%; width: 95px; height: 95px; background: radial-gradient(circle, #FFFFFF, #FFF0BC 40%, transparent 78%); opacity: 1; box-shadow: 0 0 60px 10px #FFF9DC66; }
+  .s6 .horizon{ background: linear-gradient(to right, transparent, #F8E8C8, transparent); }
+</style></head><body>
+  <div class="row">
+    <div class="s s1" data-label="01 · 05:14"><div class="sky"></div><div class="horizon"></div><div class="sun"></div><div class="sea"></div></div>
+    <div class="s s2" data-label="02 · 05:47"><div class="sky"></div><div class="horizon"></div><div class="sun"></div><div class="sea"></div></div>
+    <div class="s s3" data-label="03 · 06:12"><div class="sky"></div><div class="horizon"></div><div class="sun"></div><div class="sea"></div></div>
+    <div class="s s4" data-label="04 · 07:08"><div class="sky"></div><div class="horizon"></div><div class="sun"></div><div class="sea"></div></div>
+    <div class="s s5" data-label="05 · 08:30"><div class="sky"></div><div class="horizon"></div><div class="sun"></div><div class="sea"></div></div>
+    <div class="s s6" data-label="06 · 09:42"><div class="sky"></div><div class="horizon"></div><div class="sun"></div><div class="sea"></div></div>
+  </div>
+</body></html>

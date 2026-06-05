@@ -1,0 +1,27 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css"><link rel="stylesheet" href="_base.css">
+<style>
+  body { padding: 22px 24px; background: var(--paper); }
+  .panel { background: var(--night); border-radius: 6px; padding: 22px; color: var(--night-fg); display: flex; gap: 32px; align-items: stretch; }
+  .left { flex: 1.4; display: flex; flex-direction: column; gap: 10px; }
+  .h { font-family: var(--font-serif); font-style: italic; font-size: 30px; line-height: 1.05; letter-spacing: -0.02em; color: var(--night-fg); }
+  .body { font-size: 13px; color: var(--night-fg-2); line-height: 1.5; max-width: 32ch; }
+  .swatches { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; flex: 1; }
+  .sw { padding: 8px 10px; border-radius: 3px; display: flex; flex-direction: column; gap: 2px; }
+  .n { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--night-fg-2); }
+  .h2 { font-family: var(--font-mono); font-size: 10.5px; color: var(--night-fg-3); }
+</style></head><body>
+  <div class="panel">
+    <div class="left">
+      <span class="lbl" style="color:var(--night-fg-3)">Night / inverse</span>
+      <div class="h">Used on case-study covers and the contact footer.</div>
+      <div class="body">Paper-on-ink. Never mix night surfaces with paper surfaces in the same composition — pick one.</div>
+    </div>
+    <div class="swatches">
+      <div class="sw" style="background:var(--night-2)"><span class="n">night-2</span><span class="h2">#16304F</span></div>
+      <div class="sw" style="background:var(--night-3)"><span class="n">night-3</span><span class="h2">#1F3D62</span></div>
+      <div class="sw" style="background:var(--night);border:1px solid var(--night-3);"><span class="n">night</span><span class="h2">#0E2540</span></div>
+      <div class="sw" style="background:var(--signal)"><span class="n" style="color:var(--paper);opacity:0.9;">accent</span><span class="h2" style="color:var(--paper);opacity:0.8;">#FF6B5A</span></div>
+    </div>
+  </div>
+</body></html>

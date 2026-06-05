@@ -1,0 +1,27 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css"><link rel="stylesheet" href="_base.css">
+<style>
+  body { padding: 16px 20px; }
+  .card { background: var(--card); border: 1px solid var(--rule-strong); border-radius: 8px; padding: 20px 22px; display: grid; grid-template-columns: auto 1fr auto; gap: 22px; align-items: center; transition: background 120ms var(--ease-out); }
+  .card:hover { background: var(--paper-2); }
+  .idx { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; color: var(--ink-4); text-transform: uppercase; }
+  .body { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .title { font-family: var(--font-sans); font-weight: 500; font-size: 19px; line-height: 1.2; color: var(--ink); }
+  .sub { font-family: var(--font-serif); font-style: italic; font-size: 15px; color: var(--ink-3); }
+  .meta { display: flex; gap: 12px; align-items: center; font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.1em; color: var(--ink-4); text-transform: uppercase; }
+  .pip { width: 7px; height: 7px; border-radius: 50%; background: var(--ok); }
+  .arrow { font-family: var(--font-mono); color: var(--ink-3); font-size: 18px; transition: transform 120ms var(--ease-out), color 120ms var(--ease-out); }
+  .card:hover .arrow { transform: translateX(3px); color: var(--signal); }
+  svg.spark { width: 96px; height: 28px; }
+</style></head><body>
+  <div class="card">
+    <div class="idx">04 / 07</div>
+    <div class="body">
+      <div class="title">santra.id — an ERP for SMEs <span style="color:var(--signal);font-family:var(--font-serif);font-style:italic;font-weight:400;">.</span></div>
+      <div class="sub">Replaced four spreadsheets and a warehouse run on memory.</div>
+      <div class="meta"><span class="row gap-2"><span class="pip"></span>shipped</span><span>·</span><span>11 weeks</span><span>·</span><span>Q1 2025</span></div>
+    </div>
+    <svg class="spark" viewBox="0 0 96 28" preserveAspectRatio="none"><path d="M0 22 L12 18 L24 20 L36 12 L48 14 L60 8 L72 9 L84 4 L96 2" fill="none" stroke="#15140F" stroke-width="1.5" stroke-linecap="round"/><circle cx="96" cy="2" r="3" fill="#E85D2F"/></svg>
+    <div class="arrow">→</div>
+  </div>
+</body></html>

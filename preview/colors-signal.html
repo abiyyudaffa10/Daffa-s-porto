@@ -1,0 +1,27 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css"><link rel="stylesheet" href="_base.css">
+<style>
+  body { padding: 22px 24px; }
+  .row { gap: 12px; }
+  .big { flex: 2; background: var(--signal); border-radius: 4px; padding: 16px; min-height: 120px; display: flex; flex-direction: column; justify-content: space-between; color: var(--paper); }
+  .big .name { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.85; }
+  .big .hex { font-family: var(--font-mono); font-size: 22px; letter-spacing: 0; }
+  .big .use { font-size: 13px; color: rgba(244,239,230,0.85); max-width: 24ch; }
+  .stack { flex: 1; display: flex; flex-direction: column; gap: 12px; }
+  .sw { border-radius: 4px; padding: 10px 12px; min-height: 54px; display: flex; flex-direction: column; justify-content: center; }
+  .sw .n { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; }
+  .sw .h { font-family: var(--font-mono); font-size: 11px; }
+  .ink .n, .ink .h { color: var(--ink-3); }
+</style></head><body>
+  <div class="row">
+    <div class="big">
+      <div class="name">Signal · accent</div>
+      <div class="hex">#FF6B5A</div>
+      <div class="use">One accent. Used for primary CTAs, link hover, "in progress" pips, selection.</div>
+    </div>
+    <div class="stack">
+      <div class="sw" style="background:var(--signal-ink);color:var(--paper);"><span class="n">signal-ink</span><span class="h">#D14938</span></div>
+      <div class="sw ink" style="background:var(--signal-wash);border:1px solid var(--rule-strong);"><span class="n">signal-wash</span><span class="h">#FF6B5A · 8%</span></div>
+    </div>
+  </div>
+</body></html>

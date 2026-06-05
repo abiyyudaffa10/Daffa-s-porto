@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css"><link rel="stylesheet" href="_base.css">
+<style>
+  body { padding: 0; }
+  .nav { background: rgba(244,239,230,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid var(--rule-strong); padding: 14px 28px; display: flex; align-items: center; gap: 32px; }
+  .brand { font-family: var(--font-serif); font-style: italic; font-size: 22px; letter-spacing: -0.02em; color: var(--ink); display: flex; align-items: baseline; gap: 2px; }
+  .brand .d { width: 5px; height: 5px; border-radius: 50%; background: var(--signal); align-self: flex-end; margin-bottom: 4px; }
+  .links { display: flex; gap: 22px; }
+  .links a { font-family: var(--font-sans); font-size: 14px; font-weight: 500; color: var(--ink-2); text-decoration: none; }
+  .links a.active { color: var(--ink); border-bottom: 1.5px solid var(--ink); padding-bottom: 2px; }
+  .links a:hover { color: var(--signal); }
+  .right { margin-left: auto; display: flex; gap: 14px; align-items: center; }
+  .ver { font-family: var(--font-mono); font-size: 11px; color: var(--ink-4); letter-spacing: 0.08em; }
+  .cta { font-family: var(--font-sans); font-size: 13px; font-weight: 500; background: var(--ink); color: var(--paper); padding: 8px 14px; border-radius: 4px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+  .desc { padding: 18px 28px; }
+</style></head><body>
+  <div class="nav">
+    <div class="brand">Daffa Porto<span class="d"></span></div>
+    <div class="links">
+      <a href="#" class="active">Work</a>
+      <a href="#">Process</a>
+      <a href="#">About</a>
+      <a href="#">Writing</a>
+    </div>
+    <div class="right">
+      <span class="ver">v3 · jun 2026</span>
+      <a href="#" class="cta">Email me →</a>
+    </div>
+  </div>
+  <div class="desc"><span class="lbl">Top nav</span><span class="val" style="margin-left:12px;">Fixed 64px · paper / 85 + blur on scroll · active link gets 1.5px ink underline</span></div>
+</body></html>

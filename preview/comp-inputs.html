@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css"><link rel="stylesheet" href="_base.css">
+<style>
+  body { padding: 22px 24px; }
+  .grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 14px; align-items: end; }
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  .lbl-inline { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); }
+  .ctl { display: flex; align-items: center; gap: 8px; background: var(--card); border: 1px solid var(--rule-strong); border-radius: 4px; padding: 10px 12px; font-family: var(--font-sans); font-size: 14px; color: var(--ink); }
+  .ctl input { border: 0; background: transparent; outline: none; flex: 1; font: inherit; color: inherit; }
+  .ctl input::placeholder { color: var(--ink-4); }
+  .ctl.focus { border-color: var(--ink); box-shadow: 0 0 0 2px var(--paper), 0 0 0 4px var(--signal); }
+  .ctl svg { color: var(--ink-3); }
+  select { appearance: none; border: 0; background: transparent; outline: none; font: inherit; color: inherit; flex: 1; }
+  .check { width: 16px; height: 16px; border-radius: 2px; border: 1.5px solid var(--ink); display: flex; align-items: center; justify-content: center; color: var(--paper); background: var(--ink); }
+  .row { gap: 10px; align-items: center; }
+</style></head><body>
+  <div class="row" style="margin-bottom:14px;"><span class="lbl">Form controls</span><span class="val" style="margin-left:auto;">Card surface, hairline border, focus ring on signal</span></div>
+  <div class="grid">
+    <div class="field">
+      <span class="lbl-inline">Email</span>
+      <div class="ctl focus"><input value="hello@daffaporto.com"></div>
+    </div>
+    <div class="field">
+      <span class="lbl-inline">Search</span>
+      <div class="ctl"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3-3"/></svg><input placeholder="Search projects…"></div>
+    </div>
+    <div class="field">
+      <span class="lbl-inline">Status</span>
+      <div class="ctl"><select><option>In progress</option></select><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="m6 9 6 6 6-6"/></svg></div>
+    </div>
+  </div>
+  <div class="row" style="margin-top:14px; gap:18px;">
+    <label class="row gap-2" style="cursor:pointer;"><span class="check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 12l5 5L20 7"/></svg></span><span style="font-size:14px;">Open to remote</span></label>
+    <label class="row gap-2" style="cursor:pointer;"><span class="check" style="background:transparent;color:var(--ink);"></span><span style="font-size:14px;color:var(--ink-3);">Looking for full-time</span></label>
+  </div>
+</body></html>

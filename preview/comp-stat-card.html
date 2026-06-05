@@ -1,0 +1,33 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css"><link rel="stylesheet" href="_base.css">
+<style>
+  body { padding: 18px 20px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+  .stat { background: var(--card); border: 1px solid var(--rule-strong); border-radius: 8px; padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 6px; min-height: 120px; }
+  .e { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-4); }
+  .big { font-family: var(--font-sans); font-weight: 500; font-size: 42px; line-height: 1; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; color: var(--ink); }
+  .unit { font-family: var(--font-mono); font-size: 16px; color: var(--ink-3); margin-left: 2px; }
+  .foot { display: flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: 10.5px; color: var(--ok); letter-spacing: 0.06em; margin-top: auto; }
+  svg.s { width: 100%; height: 24px; margin-top: 2px; }
+</style></head><body>
+  <div class="grid">
+    <div class="stat">
+      <span class="e">On-time delivery</span>
+      <span class="big">+38<span class="unit">%</span></span>
+      <svg class="s" viewBox="0 0 120 24" preserveAspectRatio="none"><path d="M0 19 L17 17 L34 18 L51 12 L68 13 L85 8 L102 9 L120 3" fill="none" stroke="#15140F" stroke-width="1.5" stroke-linecap="round"/><circle cx="120" cy="3" r="2.8" fill="#E85D2F"/></svg>
+      <span class="foot">↗ Q1→Q3 2024</span>
+    </div>
+    <div class="stat">
+      <span class="e">Projects led</span>
+      <span class="big">07</span>
+      <span class="e" style="color:var(--ink-3); letter-spacing:0; text-transform:none; font-family:var(--font-serif); font-style:italic; font-size:14px;">2 currently in flight</span>
+      <span class="foot" style="color:var(--ink-4)">↗ since 2024</span>
+    </div>
+    <div class="stat">
+      <span class="e">Inventory accuracy</span>
+      <span class="big">98.6<span class="unit">%</span></span>
+      <svg class="s" viewBox="0 0 120 24" preserveAspectRatio="none"><path d="M0 22 L17 18 L34 14 L51 12 L68 8 L85 6 L102 4 L120 2" fill="none" stroke="#15140F" stroke-width="1.5" stroke-linecap="round"/><circle cx="120" cy="2" r="2.8" fill="#E85D2F"/></svg>
+      <span class="foot">↗ from 71% baseline</span>
+    </div>
+  </div>
+</body></html>

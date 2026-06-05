@@ -1,0 +1,47 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../colors_and_type.css"><link rel="stylesheet" href="_base.css">
+<style>
+  body { padding: 0; background: linear-gradient(to bottom, #5078A8 0%, #D89488 55%, #FFB87C 65%, #4A6E92 75%, #243A5A 100%); height: 320px; position: relative; overflow: hidden; }
+  .sun {
+    position: absolute; left: 50%; top: 58%;
+    transform: translate(-50%, -50%);
+    width: 180px; height: 180px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #FFF6DC, #FFCF6B 40%, transparent 78%);
+    box-shadow: 0 0 70px 12px #FFCF6B66, 0 0 160px 40px #FF8A6B33, 0 0 280px 80px #FF8A6B1A;
+  }
+  .horizon { position: absolute; left: 0; right: 0; top: 65%; height: 1px; background: linear-gradient(to right, transparent, #FFB87C 30%, #FFE3A8 50%, #FFB87C 70%, transparent); filter: blur(0.5px); }
+  .label {
+    position: absolute;
+    left: 24px; top: 22px;
+    font-family: var(--font-mono); font-size: 10.5px;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: rgba(255,255,255,0.85);
+  }
+  .label .pip { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #FF6B5A; margin-right: 8px; vertical-align: middle; }
+  .h {
+    position: absolute;
+    left: 24px; bottom: 24px;
+    font-family: var(--font-serif); font-style: italic;
+    font-size: 56px; line-height: 0.95;
+    letter-spacing: -0.02em;
+    color: #1A2E48;
+    text-wrap: balance;
+  }
+  .h .dot { color: #FF6B5A; font-style: italic; }
+  .right {
+    position: absolute;
+    right: 24px; bottom: 24px;
+    text-align: right;
+    color: rgba(26,46,72,0.7);
+    font-family: var(--font-mono); font-size: 11px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+  }
+  .right .big { display:block; font-size: 18px; letter-spacing: 0; color: #1A2E48; font-weight: 500; }
+</style></head><body>
+  <div class="label"><span class="pip"></span> 06:12 — Sunrise · 03 / 06</span></div>
+  <div class="sun"></div>
+  <div class="horizon"></div>
+  <div class="h">A sunrise<br/>at the harbor<span class="dot">.</span></div>
+  <div class="right"><span class="big">Sky → Sun → Sea</span>The brand metaphor</div>
+</body></html>

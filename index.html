@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daffa Porto — Project manager. I ship operational software.</title>
+  <link rel="icon" href="assets/favicon.svg" />
+
+  <link rel="stylesheet" href="colors_and_type.css" />
+  <link rel="stylesheet" href="portfolio.css" />
+
+  <template id="__bundler_thumbnail">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+      <defs>
+        <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#5078A8"/>
+          <stop offset="0.6" stop-color="#FFB87C"/>
+          <stop offset="1" stop-color="#3A5478"/>
+        </linearGradient>
+      </defs>
+      <rect width="200" height="200" fill="url(#g)"/>
+      <circle cx="100" cy="118" r="32" fill="#FFCF6B"/>
+      <rect x="0" y="130" width="200" height="70" fill="#3A5478" opacity="0.7"/>
+    </svg>
+  </template>
+</head>
+
+<body>
+
+  <!-- =================== FIXED SCENE LAYER =================== -->
+  <div class="stage" aria-hidden="true">
+    <div class="sky"></div>
+    <div class="clouds"></div>
+    <div class="sun"></div>
+    <div class="horizon-line"></div>
+    <div class="coast"></div>
+    <div class="sea"></div>
+    <div class="sea-shimmer"></div>
+    <div class="veil"></div>
+  </div>
+
+  <!-- =================== NAV =================== -->
+  <nav class="nav">
+    <a class="brand" href="#scene-1">Daffa Porto<span class="d"></span></a>
+    <div class="progress" role="tablist" aria-label="Scenes">
+      <button class="dot" aria-label="Pre-dawn — intro"></button>
+      <button class="dot" aria-label="santra.id"></button>
+      <button class="dot" aria-label="RUNA"></button>
+      <button class="dot" aria-label="Vehicle Booking System"></button>
+      <button class="dot" aria-label="Contact"></button>
+    </div>
+  </nav>
+
+  <!-- =================== TIME-OF-DAY READOUT =================== -->
+  <div class="timeofday" aria-hidden="true">
+    <div class="clock">05:14</div>
+    <div class="label">Pre-dawn</div>
+  </div>
+
+  <!-- =================== SCROLLING CONTENT =================== -->
+  <main class="deck">
+
+    <!-- ============ SCENE 1 — PRE-DAWN — HERO ============ -->
+    <section class="scene scene-hero" id="scene-1" data-scene-label="01 Pre-dawn">
+      <div class="container">
+        <div class="left">
+          <div class="scene-index">
+            <span><span class="pip"></span> 05:14 — Pre-dawn</span>
+            <span class="bar"></span>
+            <span>01 / 05</span>
+          </div>
+
+          <h1 class="display">
+            I ship operational<br/><em>software</em><span class="accent">.</span>
+          </h1>
+
+          <p class="lede">
+            Daffa Porto — project manager. I build and lead delivery on ERP, AI Ops, and logistics systems.
+          </p>
+
+          <div class="actions">
+            <a class="btn btn-primary" href="#scene-2">
+              See the work
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="mailto:abiyyudaffa69@gmail.com">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+              abiyyudaffa69@gmail.com
+            </a>
+            <span class="kbd-hint">
+              <span class="key">↓</span> scroll
+            </span>
+          </div>
+        </div>
+
+        <aside class="hero-aside">
+          <div class="portrait-wrap">
+            <div class="portrait-glow"></div>
+            <img class="portrait-img" src="assets/photo-daffa.jpg" alt="Daffa Porto portrait" />
+          </div>
+          <div class="row"><span class="k">Based</span><span class="v">Jakarta · GMT+7</span></div>
+          <div class="row"><span class="k">Available</span><span class="v">Q3 2026</span></div>
+          <div class="row"><span class="k">Focus</span><span class="v">ERP · AI Ops · Logistics</span></div>
+          <div class="row"><span class="k">Languages</span><span class="v">Indonesian · English</span></div>
+        </aside>
+      </div>
+    </section>
+
+
+    <!-- ============ SCENE 2 — FIRST LIGHT — santra.id ============ -->
+    <section class="scene" id="scene-2" data-scene-label="02 First light">
+      <div class="container">
+        <div class="project">
+          <div>
+            <div class="scene-index">
+              <span><span class="pip"></span> 05:47 — First light</span>
+              <span class="bar"></span>
+              <span>02 / 05</span>
+            </div>
+            <h2 class="display">
+              <em>santra.id</em><span class="accent">.</span>
+            </h2>
+            <p class="lede">
+              Developed santra.id as an ERP solution for SMEs — enabling businesses to organize accounting, inventory, and operational workflows through a more centralized and scalable system.
+            </p>
+            <div class="project-meta">
+              <div><div class="lab">Role</div><div class="val">Founder</div></div>
+              <div><div class="lab">Duration</div><div class="val">Q4 ’25 — Q1 ’26</div></div>
+              <div><div class="lab">Stack</div><div class="val">Blade · Postgres · Farm module</div></div>
+              <div><div class="lab">Status</div><div class="val">In production</div></div>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="#">
+                Read case study
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+              <a class="btn btn-ghost" href="#">santra.id ↗</a>
+            </div>
+          </div>
+
+          <!-- Mock: santra inventory dashboard -->
+          <div class="mock-card mock-santra">
+            <div class="mock-bar">
+              <div class="dots"><span></span><span></span><span></span></div>
+              <span class="url">santra.id/warehouse</span>
+              <span class="badge">live</span>
+            </div>
+            <div class="mock-body">
+              <div class="stats">
+                <div class="stat"><div class="e">Inventory acc.</div><div class="v">98.6%</div><div class="d">↗ from 71%</div></div>
+                <div class="stat"><div class="e">On-time</div><div class="v">+38%</div><div class="d">↗ Q1→Q3</div></div>
+                <div class="stat"><div class="e">Hrs saved/wk</div><div class="v">27h</div><div class="d">↗ team</div></div>
+              </div>
+              <table>
+                <thead><tr><th>SKU</th><th>Item</th><th>Loc</th><th style="text-align:right;">On hand</th><th style="text-align:right;">Moved</th></tr></thead>
+                <tbody>
+                  <tr><td><span class="pip" style="background:var(--ok)"></span>SNT-0142</td><td>Premium kopi 250g</td><td>A-12</td><td class="num">1,840</td><td class="num">+220</td></tr>
+                  <tr><td><span class="pip" style="background:var(--signal)"></span>SNT-0211</td><td>Gula aren botol</td><td>B-04</td><td class="num">96</td><td class="num">−12</td></tr>
+                  <tr><td><span class="pip" style="background:var(--ok)"></span>SNT-0317</td><td>Kemasan rangkap 500ml</td><td>C-22</td><td class="num">12,300</td><td class="num">+1,100</td></tr>
+                  <tr><td><span class="pip" style="background:var(--warn)"></span>SNT-0408</td><td>Label custom (set)</td><td>D-09</td><td class="num">48</td><td class="num">−4</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ SCENE 3 — SUNRISE — RUNA ============ -->
+    <section class="scene" id="scene-3" data-scene-label="03 Sunrise">
+      <div class="container">
+        <div class="project">
+          <div>
+            <div class="scene-index">
+              <span><span class="pip"></span> 06:12 — Sunrise</span>
+              <span class="bar"></span>
+              <span>03 / 05</span>
+            </div>
+            <h2 class="display">
+              <em>RUNA</em><span class="accent">.</span>
+            </h2>
+            <p class="lede">
+              A pet activity and health-tracking platform that helps owners monitor routes, weekly activity, weight progress, and wellness history — then share key insights with their veterinarian.
+            </p>
+            <div class="project-meta">
+              <div><div class="lab">Role</div><div class="val">Founder</div></div>
+              <div><div class="lab">Duration</div><div class="val">6 months · ongoing</div></div>
+              <div><div class="lab">Stack</div><div class="val">Blade · Postgres · MapKit</div></div>
+              <div><div class="lab">Status</div><div class="val">On development</div></div>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="#">Read the build log
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Mock: RUNA phone -->
+          <div class="mock-card mock-runa">
+            <div class="phone">
+              <div class="status-bar"><span>9:41</span><span>●●● 5G</span></div>
+              <div class="greet">Good morning, <em>Daffa</em>.</div>
+              <div class="greet-sub">Bumi has been up for an hour.</div>
+              <div class="ring">
+                <svg class="ring-svg" viewBox="0 0 56 56">
+                  <circle cx="28" cy="28" r="22" fill="none" stroke="#EAD9B0" stroke-width="6"/>
+                  <circle cx="28" cy="28" r="22" fill="none" stroke="#FF6B5A" stroke-width="6" stroke-linecap="round" stroke-dasharray="138.2" stroke-dashoffset="38" transform="rotate(-90 28 28)"/>
+                </svg>
+                <div class="ring-meta"><div class="e">Today · walked</div><div class="v">2.4<span style="font-family:var(--font-mono);font-size:13px;color:var(--ink-3)"> km</span></div></div>
+              </div>
+              <div class="walk">
+                <div class="ico">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="4" cy="8" r="2"/><circle cx="11" cy="11" r="2.5"/></svg>
+                </div>
+                <div class="info"><div class="who">Morning loop · Senayan</div><div class="when">06:14 → 06:42 · 2.4 km</div></div>
+              </div>
+              <div class="walk">
+                <div class="ico">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="4" cy="8" r="2"/><circle cx="11" cy="11" r="2.5"/></svg>
+                </div>
+                <div class="info"><div class="who">Park session · GBK</div><div class="when">yesterday · 1.8 km</div></div>
+              </div>
+              <div class="walk">
+                <div class="ico">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="4" cy="8" r="2"/><circle cx="11" cy="11" r="2.5"/></svg>
+                </div>
+                <div class="info"><div class="who">Vet visit · Dr. Putri</div><div class="when">2 days ago · 12.4 kg</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ SCENE 4 — BRIGHT MORNING — Vehicle Booking ============ -->
+    <section class="scene" id="scene-4" data-scene-label="04 Bright morning">
+      <div class="container">
+        <div class="project">
+          <div>
+            <div class="scene-index">
+              <span><span class="pip"></span> 08:30 — Bright morning</span>
+              <span class="bar"></span>
+              <span>04 / 05</span>
+            </div>
+            <h2 class="display">
+              Vehicle <em>Booking</em><br/>System<span class="accent">.</span>
+            </h2>
+            <p class="lede">
+              One singular app connecting terminals, truck depots, and customers — lifting truck booking system performance across a national logistics network.
+            </p>
+            <div class="project-meta">
+              <div><div class="lab">Role</div><div class="val">Lead PM</div></div>
+              <div><div class="lab">Duration</div><div class="val">Q1 — Q4 2026</div></div>
+              <div><div class="lab">Carriers</div><div class="val">BUMN holding</div></div>
+              <div><div class="lab">Status</div><div class="val">In production</div></div>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="#">Read case study
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+              <a class="btn btn-ghost" href="#">Under NDA — request access</a>
+            </div>
+          </div>
+
+          <!-- Mock: VBS schedule grid -->
+          <div class="mock-card mock-vbs">
+            <div class="head">
+              <span class="ttl">Berth 7 — slot schedule</span>
+              <span class="date">Mon · Jun 8</span>
+            </div>
+            <div class="schedule">
+              <div class="hr"></div>
+              <div class="col-h">06h</div><div class="col-h">07h</div><div class="col-h">08h</div><div class="col-h">09h</div><div class="col-h">10h</div><div class="col-h">11h</div>
+
+              <div class="hr">A1</div>
+              <div class="slot booked">PT MIL · 42</div>
+              <div class="slot signal">PT KRG · 12</div>
+              <div class="slot booked">PT JSL · 04</div>
+              <div class="slot open">—</div>
+              <div class="slot booked">PT NUR · 31</div>
+              <div class="slot booked">PT MIL · 18</div>
+
+              <div class="hr">A2</div>
+              <div class="slot open">—</div>
+              <div class="slot booked">PT BSA · 22</div>
+              <div class="slot booked">PT BSA · 22</div>
+              <div class="slot signal">PT TRI · 88</div>
+              <div class="slot open">—</div>
+              <div class="slot booked">PT NUR · 17</div>
+
+              <div class="hr">B1</div>
+              <div class="slot booked">PT KRG · 09</div>
+              <div class="slot booked">PT KRG · 09</div>
+              <div class="slot open">—</div>
+              <div class="slot booked">PT SAM · 60</div>
+              <div class="slot signal">PT MIL · 04</div>
+              <div class="slot open">—</div>
+
+              <div class="hr">B2</div>
+              <div class="slot booked">PT JSL · 11</div>
+              <div class="slot open">—</div>
+              <div class="slot booked">PT TRI · 88</div>
+              <div class="slot booked">PT TRI · 88</div>
+              <div class="slot booked">PT SAM · 02</div>
+              <div class="slot booked">PT BSA · 36</div>
+            </div>
+            <div style="padding:10px 16px;display:flex;gap:18px;border-top:1px solid var(--rule-strong);font-family:var(--font-mono);font-size:10.5px;color:var(--ink-3);letter-spacing:0.08em;text-transform:uppercase;">
+              <span><span style="display:inline-block;width:9px;height:9px;background:#2A4A6E33;margin-right:6px;vertical-align:middle;"></span> booked</span>
+              <span><span style="display:inline-block;width:9px;height:9px;background:#FF6B5A33;margin-right:6px;vertical-align:middle;"></span> overage</span>
+              <span><span style="display:inline-block;width:9px;height:9px;border:1px solid var(--rule-strong);margin-right:6px;vertical-align:middle;"></span> open</span>
+              <span style="margin-left:auto;">Slot fill — 78%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ SCENE 5 — DAYLIGHT — CLOSING ============ -->
+    <section class="scene closing" id="scene-5" data-scene-label="05 Daylight">
+      <div class="container">
+        <div class="scene-index" style="justify-content:center;display:flex;">
+          <span><span class="pip"></span> 09:42 — Daylight</span>
+          <span class="bar"></span>
+          <span>05 / 05</span>
+        </div>
+
+        <h2 class="display">
+          The sun is up.<br/>
+          What are we <em>shipping</em> today<span class="accent">?</span>
+        </h2>
+
+        <p class="lede">
+          I'm taking on one new engagement for Q3 2026. Send me what you're stuck on and a calendar link — I'll reply within a day.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="mailto:abiyyudaffa69@gmail.com">
+            abiyyudaffa69@gmail.com
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#">Book a 30-min intro
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          </a>
+        </div>
+
+        <div class="small-links">
+          <a href="#">GitHub ↗</a>
+          <a href="#">LinkedIn ↗</a>
+          <a href="#">read.cv ↗</a>
+          <a href="#scene-1">↑ back to dawn</a>
+        </div>
+
+        <div style="margin-top:80px;font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--scene-ink-2);opacity:0.7;">
+          © 2026 Daffa Porto · Jakarta · v3.0 — last updated jun 2026
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="scroll.js?v=4"></script>
+</body>
+</html>

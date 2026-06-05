@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="4" fill="#0E2540"></rect>
+  <text x="5" y="23" font-family="Instrument Serif, Iowan Old Style, Georgia, serif" font-style="italic" font-weight="400" font-size="22" letter-spacing="-0.02em" fill="#F4EFE6">dp</text>
+  <circle cx="25.5" cy="22.5" r="1.8" fill="#FF6B5A"></circle>
+</svg>
