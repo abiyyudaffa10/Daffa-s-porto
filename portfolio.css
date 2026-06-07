@@ -580,7 +580,16 @@ body {
 .mock-santra td.num { font-family: var(--font-mono); text-align: right; }
 
 /* RUNA: mobile-shaped walk log */
-.mock-runa { padding: 24px 0 0; display: flex; justify-content: center; background: linear-gradient(180deg, #FFE3CC 0%, #FFD2A8 100%); }
+.mock-runa {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
 .mock-runa .phone {
   width: 280px;
   background: var(--card);
