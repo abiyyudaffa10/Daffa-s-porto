@@ -30,7 +30,23 @@
       rule:     'rgba(236,230,242,0.18)',
     },
     {
-      // 2. First light — santra.id
+      // 2. Civil dawn — Professional Experience
+      sky_top:  '#1C2848',
+      sky_mid:  '#5A4070',
+      horizon:  '#CC7060',
+      sea:      '#12203E',
+      sea_deep: '#0A1428',
+      sun:      '#FFBC84',
+      sun_glow: '#FFD8B0',
+      sun_y:    96,
+      sun_size: 240,
+      sun_op:   0.55,
+      ink:      '#EEE4D8',
+      ink_2:    '#BEB0A0',
+      rule:     'rgba(238,228,216,0.19)',
+    },
+    {
+      // 3. First light — santra.id
       sky_top:  '#2E4068',
       sky_mid:  '#7C5A80',
       horizon: '#FF8A6B',
@@ -98,6 +114,7 @@
   // The scene labels shown bottom-right
   const SCENE_LABELS = [
     { time: '05:14', label: 'Pre-dawn' },
+    { time: '05:30', label: 'Civil dawn' },
     { time: '05:47', label: 'First light' },
     { time: '06:12', label: 'Sunrise' },
     { time: '08:30', label: 'Bright morning' },

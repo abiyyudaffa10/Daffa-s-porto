@@ -702,6 +702,52 @@ body {
 
 /* =================== RESPONSIVE =================== */
 
+/* =================== EXPERIENCE GRID (scene 2) =================== */
+
+.exp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 56px;
+}
+
+.exp-card {
+  border: 1px solid var(--scene-rule);
+  border-radius: 8px;
+  padding: 24px;
+  background: color-mix(in srgb, var(--sky-top) 25%, transparent);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.exp-role {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--signal);
+  margin-bottom: 12px;
+}
+
+.exp-body {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--scene-ink-2);
+  margin: 0 0 20px;
+}
+
+.exp-meta {
+  display: flex;
+  gap: 16px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--scene-ink);
+  opacity: 0.7;
+}
+
+
 @media (max-width: 880px) {
   .scene-hero .container,
   .project { grid-template-columns: 1fr; gap: 32px; }
@@ -709,6 +755,7 @@ body {
   .project-meta { grid-template-columns: 1fr 1fr; }
   .nav .progress { display: none; }
   .timeofday { bottom: 16px; right: 16px; }
+  .exp-grid { grid-template-columns: 1fr; }
 
   /* iOS & mobile: background-attachment: fixed is broken on Safari
      and causes jank on Android. Replace with a plain solid fallback
