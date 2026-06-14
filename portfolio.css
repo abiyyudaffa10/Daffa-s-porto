@@ -747,6 +747,55 @@ body {
   opacity: 0.55;
 }
 
+/* =================== CAREER LOG (scene 2) =================== */
+
+.career-log {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--scene-rule);
+}
+
+.career-log-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--scene-ink-2);
+  opacity: 0.65;
+  margin-bottom: 18px;
+}
+
+.career-entry {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr auto;
+  gap: 6px 24px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--scene-rule);
+  align-items: baseline;
+}
+
+.career-co {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--scene-ink);
+  letter-spacing: 0.01em;
+}
+
+.career-detail {
+  font-size: 13px;
+  color: var(--scene-ink-2);
+}
+
+.career-period {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  color: var(--scene-ink-2);
+  opacity: 0.65;
+  text-align: right;
+  white-space: nowrap;
+}
+
 
 @media (max-width: 880px) {
   .scene-hero .container,
@@ -756,6 +805,8 @@ body {
   .nav .progress { display: none; }
   .timeofday { bottom: 16px; right: 16px; }
   .exp-grid { grid-template-columns: 1fr; }
+  .career-entry { grid-template-columns: 1fr 1fr; }
+  .career-period { text-align: left; }
 
   /* iOS & mobile: background-attachment: fixed is broken on Safari
      and causes jank on Android. Replace with a plain solid fallback
