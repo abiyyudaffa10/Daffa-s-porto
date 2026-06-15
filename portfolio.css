@@ -486,7 +486,7 @@ body {
 /* =================== PROJECT SCENES =================== */
 
 .project { display: grid; grid-template-columns: 1.1fr 1fr; gap: 80px; align-items: center; }
-.project .lede { color: var(--scene-ink-2); }
+.project .lede { color: var(--scene-ink); }
 
 .project-meta {
   margin-top: 36px;
