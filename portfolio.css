@@ -747,38 +747,7 @@ body {
   opacity: 0.55;
 }
 
-/* =================== CAREER LOG (scene 2) =================== */
-
-.career-log {
-  margin-top: 48px;
-  padding-top: 32px;
-  border-top: 1px solid var(--scene-rule);
-}
-
-.career-log-label {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--scene-ink-2);
-  opacity: 0.65;
-  margin-bottom: 18px;
-}
-
-.career-entry {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 0 24px;
-  padding: 18px 0;
-  border-bottom: 1px solid var(--scene-rule);
-  align-items: center;
-}
-
-.career-badges {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
+/* =================== CO BADGES (shared) =================== */
 
 .co-badge {
   height: 44px;
@@ -793,7 +762,6 @@ body {
   justify-content: center;
   flex-shrink: 0;
 }
-
 .co-badge img {
   height: 28px;
   width: auto;
@@ -801,29 +769,112 @@ body {
   object-fit: contain;
   display: block;
 }
+.co-badge--sm {
+  height: 32px;
+  padding: 5px 8px;
+  border-radius: 7px;
+}
+.co-badge--sm img { height: 18px; max-width: 72px; }
 
-.career-info { display: flex; flex-direction: column; gap: 4px; }
 
-.career-co {
-  font-size: 14.5px;
-  font-weight: 600;
-  color: var(--scene-ink);
-  letter-spacing: 0.01em;
+/* =================== GANTT CHART (scene 2) =================== */
+
+.gantt {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--scene-rule);
 }
 
-.career-detail {
-  font-size: 12.5px;
-  color: var(--scene-ink-2);
-}
-
-.career-period {
+.gantt-log-label {
   font-family: var(--font-mono);
-  font-size: 10.5px;
-  letter-spacing: 0.08em;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
   color: var(--scene-ink-2);
   opacity: 0.65;
-  text-align: right;
+  margin-bottom: 16px;
+}
+
+.gantt-head,
+.gantt-row {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 0 16px;
+  align-items: center;
+}
+
+.gantt-quarters {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--scene-rule);
+}
+.gantt-quarters span {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--scene-ink-2);
+  opacity: 0.55;
+}
+
+.gantt-row {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--scene-rule);
+}
+
+.gantt-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+.gantt-label > span {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--scene-ink);
   white-space: nowrap;
+}
+.gantt-co-badges {
+  display: flex;
+  gap: 5px;
+  flex-shrink: 0;
+}
+.gantt-co-badges--spacer { width: calc(3 * 32px + 2 * 5px); }
+
+.gantt-track {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 32px;
+  align-items: center;
+}
+
+.gantt-bar {
+  height: 24px;
+  border-radius: 6px;
+  margin: 0 2px;
+  opacity: 0.82;
+}
+.gb-signal { background: var(--signal); }
+.gb-ok     { background: var(--ok); }
+.gb-info   { background: var(--info); }
+.gb-warn   { background: var(--warn); }
+
+.gantt-bar--open {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  /* dashed arrow edge */
+  position: relative;
+}
+.gantt-bar--open::after {
+  content: '→';
+  position: absolute;
+  right: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: var(--warn);
+  opacity: 0.7;
 }
 
 
@@ -835,8 +886,11 @@ body {
   .nav .progress { display: none; }
   .timeofday { bottom: 16px; right: 16px; }
   .exp-grid { grid-template-columns: 1fr; }
-  .career-entry { grid-template-columns: auto 1fr; row-gap: 6px; }
-  .career-period { grid-column: 2; text-align: left; }
+  .gantt-head, .gantt-row { grid-template-columns: 1fr; gap: 6px; }
+  .gantt-quarters { display: none; }
+  .gantt-track { height: 22px; }
+  .gantt-bar { height: 18px; }
+  .gantt-co-badges--spacer { display: none; }
 
   /* iOS & mobile: background-attachment: fixed is broken on Safari
      and causes jank on Android. Replace with a plain solid fallback
