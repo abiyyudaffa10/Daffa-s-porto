@@ -824,7 +824,8 @@ body {
 }
 
 .gantt-label {
-  display: flex;
+  display: grid;
+  grid-template-columns: 115px 1fr;
   align-items: center;
   gap: 10px;
   min-width: 0;
@@ -838,9 +839,9 @@ body {
 .gantt-co-badges {
   display: flex;
   gap: 5px;
-  flex-shrink: 0;
+  align-items: center;
 }
-.gantt-co-badges--spacer { width: calc(3 * 32px + 2 * 5px); }
+.gantt-co-badges--spacer { /* empty cell keeps alignment */ }
 
 .gantt-track {
   display: grid;
@@ -890,7 +891,8 @@ body {
   .gantt-quarters { display: none; }
   .gantt-track { height: 22px; }
   .gantt-bar { height: 18px; }
-  .gantt-co-badges--spacer { display: none; }
+  .gantt-label { grid-template-columns: auto 1fr; }
+  .gantt-co-badges:empty { display: none; }
 
   /* iOS & mobile: background-attachment: fixed is broken on Safari
      and causes jank on Android. Replace with a plain solid fallback
