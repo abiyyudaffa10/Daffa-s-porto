@@ -770,11 +770,12 @@ body {
   display: block;
 }
 .co-badge--sm {
+  width: 32px;
   height: 32px;
-  padding: 5px 8px;
+  padding: 4px;
   border-radius: 7px;
 }
-.co-badge--sm img { height: 18px; max-width: 72px; }
+.co-badge--sm img { width: 100%; height: 100%; max-width: none; object-fit: contain; }
 
 
 /* =================== GANTT CHART (scene 2) =================== */
@@ -798,7 +799,7 @@ body {
 .gantt-head,
 .gantt-row {
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 200px 1fr;
   gap: 0 16px;
   align-items: center;
 }
@@ -819,19 +820,19 @@ body {
 }
 
 .gantt-row {
-  padding: 8px 0;
+  padding: 14px 0;
   border-bottom: 1px solid var(--scene-rule);
 }
 
 .gantt-label {
-  display: grid;
-  grid-template-columns: 115px 1fr;
-  align-items: center;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
   min-width: 0;
 }
 .gantt-label > span {
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 600;
   color: var(--scene-ink);
   white-space: nowrap;
@@ -840,6 +841,7 @@ body {
   display: flex;
   gap: 5px;
   align-items: center;
+  min-height: 32px;
 }
 .gantt-co-badges--spacer { /* empty cell keeps alignment */ }
 
@@ -891,8 +893,7 @@ body {
   .gantt-quarters { display: none; }
   .gantt-track { height: 22px; }
   .gantt-bar { height: 18px; }
-  .gantt-label { grid-template-columns: auto 1fr; }
-  .gantt-co-badges:empty { display: none; }
+  .gantt-co-badges--spacer { display: none; }
 
   /* iOS & mobile: background-attachment: fixed is broken on Safari
      and causes jank on Android. Replace with a plain solid fallback
