@@ -889,11 +889,16 @@ body {
   .nav .progress { display: none; }
   .timeofday { bottom: 16px; right: 16px; }
   .exp-grid { grid-template-columns: 1fr; }
-  .gantt-head, .gantt-row { grid-template-columns: 1fr; gap: 6px; }
+  .gantt-head, .gantt-row { grid-template-columns: 1fr; gap: 14px; }
   .gantt-quarters { display: none; }
-  .gantt-track { height: 22px; }
-  .gantt-bar { height: 18px; }
+  .gantt-track { height: 28px; }
+  .gantt-bar { height: 22px; }
   .gantt-co-badges--spacer { display: none; }
+  .gantt-row { padding: 20px 0; }
+  .co-badge--sm { width: 52px; height: 52px; padding: 7px; border-radius: 12px; }
+  .gantt-co-badges { gap: 10px; min-height: 52px; }
+  .gantt-label { gap: 10px; }
+  .gantt-label > span { font-size: 16px; }
 
   /* iOS & mobile: background-attachment: fixed is broken on Safari
      and causes jank on Android. Replace with a plain solid fallback
